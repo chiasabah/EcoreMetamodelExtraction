@@ -11,3 +11,6 @@ Open Java projects in the Eclipse IDE can be selected to extract an Ecore Metamo
 5. Run the project as Eclipse Application.
 6. You can start the extraction from the context menu of a Java project or from the toolbar (provisional UI).
 7. Extracting metamodels from projects with errors can cause problems while resolving types (or other problems). It is recommended to use code for the reverse engineering of Ecore metamodels that compiles without problems.
+## Issues with current prototype
+1. The project(s) must be opened in Eclipse as a workspace.
+2. Google's JSON Simple is not used by the plugin for JSON analysis. Dynamic loading of JSON file is blocked but that's not necessary since the project data is already extracted.   
